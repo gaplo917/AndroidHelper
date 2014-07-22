@@ -2,23 +2,23 @@ apply plugin: 'android'
 android {
     signingConfigs {
         debug {
-            storeFile file("had.keystore")
+            storeFile file("example.keystore")
             storePassword "abc123"
-            keyAlias "had"
+            keyAlias "example"
             keyPassword "abc123"
         }
 
         release {
-            storeFile file("had.keystore")
+            storeFile file("example.keystore")
             storePassword "abc123"
-            keyAlias "had"
+            keyAlias "example"
             keyPassword "abc123"
         }
     }
     compileSdkVersion 19
     buildToolsVersion '19.1.0'
     defaultConfig {
-        applicationId "com.kanhan.had"
+        applicationId "com.example"
         minSdkVersion 14
         targetSdkVersion 19
         versionCode 1
@@ -48,11 +48,11 @@ android {
     }
     productFlavors {
         demo {
-            applicationId "com.kanhan.had.demo"
+            applicationId "com.example.demo"
             versionName "1.0-demo"
         }
         full {
-            applicationId "com.kanhan.had"
+            applicationId "com.example"
             versionName "1.0"
         }
     }
